@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario - E.E.S.T. N°2</title>
+    <link rel="icon" href="../img/l.png" type="image/png">
+    <link rel="stylesheet" href="../styles/style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+</head>
+<body>
+    <header id="menuHeader">
+        <div class="index">
+            <div class="userProfile">
+                <img src="../img/perfiles/CatNegativ.jpg" class="profileImage" alt="Usuario">
+                <h1 class="userName">Capria Franco</h1>
+            </div>
+            <nav class="navHeader">
+                <ul>
+                    <li><a href="menuAlum.html"><img src="../img/utilidades/casa.png" alt="inicioIMG" class="iconsHeader"> Inicio</a></li>
+                    <li><a href="materiaAlum.html"><img src="../img/utilidades/libro.png" alt="MateriasIMG" class="iconsHeader"> Materias</a></li>
+                    <li><a href="asistenciaAlum.html"><img src="../img/utilidades/calendario3.png" alt="asistenciaIMG" class="iconsHeader"> Asistencias</a></li>
+                    <li><a href="bibliotecaAlum.html"><img src="../img/utilidades/biblioteca.png" alt="bibliotecaIMG" class="iconsHeader"> Biblioteca</a></li>
+                </ul>
+            </nav>
+            <div class="confHeader">
+                <button class="btnExit" id="btnExit"><img src="../img/utilidades/cerrarSesion.png" alt="exitIMG" class="iconsHeader"> Salir</button>
+            </div>
+        </div>
+        <label class="btnMenuHeader" for="ckbMenuHeader">
+            <input type="checkbox" id="ckbMenuHeader">
+            <svg viewBox="0 0 32 32"><path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path><path class="line" d="M7 16 27 16"></path></svg>
+        </label>
+    </header>
+    <main>
+        <section class="seccionAccesosInicio">
+            <h2>Accesos al contenido</h2>
+            <div class="accesoPart1">
+                <button class="btnsAccesos" id="seccionNotificacionesCel"><img src="../img/utilidades/notificacionLight.png" alt="Notificaciones" class="iconsAcceso"> Notificaciones</button>
+                <button class="btnsAccesos" id="seccionCalendarioCel"><img src="../img/utilidades/calendarioLight.png" alt="Notificaciones" class="iconsAcceso"> Calendario</button>
+            </div>
+        </section>
+        <section class="seccionNotificaciones">
+            <h2>Notificaciones</h2>
+            <div class="contendorNotificaciones" id="contendorNotificaciones"></div>
+        </section>
+        <section class="seccionCalendario">
+            <h2>Calendario</h2>
+            <div class="calendarioPart1">
+                <button id="mesAnterior">◀</button>
+                <span id="mesIndicador"></span>
+                <button id="mesSiguinte">▶</button>
+            </div>
+            <div class="calendarioPart2">
+                <div class="calendarioDiaSemana">Lun.</div>
+                <div class="calendarioDiaSemana">Mar.</div>
+                <div class="calendarioDiaSemana">Mié.</div>
+                <div class="calendarioDiaSemana">Jue.</div>
+                <div class="calendarioDiaSemana">Vie.</div>
+                <div class="calendarioDiaSemana">Sáb.</div>
+                <div class="calendarioDiaSemana">Dom.</div>
+            </div>
+            <div class="calendarioPart2Cel">
+                <div class="calendarioDiaSemana">L.</div>
+                <div class="calendarioDiaSemana">M.</div>
+                <div class="calendarioDiaSemana">M.</div>
+                <div class="calendarioDiaSemana">J.</div>
+                <div class="calendarioDiaSemana">V.</div>
+                <div class="calendarioDiaSemana">S.</div>
+                <div class="calendarioDiaSemana">D.</div>
+            </div>
+            <div class="calendarioPart3" id="calendarioPart3"></div>
+        </section>
+        <!-- Modal para notas -->
+        <div id="noteModal" class="modal oculto">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="noteList"></div> <!-- Contenedor para las notas existentes -->
+                <hr>
+                <label for="categorySelect">Categoría:</label>
+                <select id="categorySelect">
+                    <option value="">Seleccionar</option>
+                    <option value="TP">TP</option>
+                    <option value="Examen">Examen</option>
+                    <option value="Oral">Oral</option>
+                    <option value="Exposición">Exposición</option>
+                    <option value="Act.">Act.</option>
+                </select>
+                <label for="noteContent">Contenido:</label>
+                <textarea id="noteContent"></textarea>
+                <button id="saveNoteBtn">Guardar Nota</button>
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/userMenu.js"></script>
+    <script src="../scripts/Header.js"></script>
+    <script src="../scripts/userCalendario.js"></script>
+</body>
+</html>

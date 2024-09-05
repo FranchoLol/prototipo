@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matias Ferrando - Profesor - E.E.S.T. N°2</title>
+    <link rel="icon" href="../img/l.png" type="image/png">
+    <link rel="stylesheet" href="../styles/web/styleProf.css" type="text/css">
+</head>
+<body>
+    <header id="menuHeader">
+        <div class="index">
+            <div class="userProfile">
+                <img src="../img/perfiles/FerrandoMatias.jpg" class="profileImage" alt="Usuario">
+                <h1 class="userName">Matias Ferrando</h1>
+            </div>
+            <nav class="navHeader">
+                <ul>
+                    <li><a href="menuProfe.html"><img src="../img/utilidades/casa.png" alt="inicioIMG" class="iconsHeader"> Inicio</a></li>
+                    <li><a href="notasProfes.html"><img src="../img/utilidades/libro.png" alt="MateriasIMG" class="iconsHeader"> Notas</a></li>
+                    <!--<li><a href="asistenciaProfe.html">Asistencia</a></li>
+                    <li><a href=""></a></li>-->
+                </ul>
+            </nav>
+            <div class="confHeader">
+                <button class="btnExit" id="btnExit">Salir</button>
+            </div>
+        </div>
+        <label class="btnMenuHeader" for="ckbMenuHeader">
+            <input type="checkbox" id="ckbMenuHeader">
+            <svg viewBox="0 0 32 32"><path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path><path class="line" d="M7 16 27 16"></path></svg>
+        </label>
+    </header>
+    <main>
+        <section class="notifications-container">
+            <h2>Notificaciones</h2>
+            <section class="notifications" id="notificationsContainer"></section>
+        </section>
+        <section class="create-notification">
+            <textarea id="notificationMessage" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <div class="btnDeMensajesOptions">
+                <button id="clearMessage">Eliminar</button>
+                <button id="sendMessage">Enviar</button>
+            </div>
+        </section>
+        <div id="alertContainer" class="alert-container hidden">
+            <div class="alert-card">
+                <p id="alertMessage">Este es un mensaje de alerta.</p>
+                <button id="alertCloseBtn">Cerrar</button>
+            </div>
+        </div>
+        <div id="confirmContainer" class="alert-container hidden">
+            <div class="alert-card">
+                <p id="confirmMessage">¿Estás seguro?</p>
+                <div class="confirm-buttons">
+                    <button id="confirmYesBtn">Sí</button>
+                    <button id="confirmNoBtn">No</button>
+                </div>
+            </div>
+        </div>
+    </main>    
+    <script src="../scripts/profeMenu.js"></script>
+    <script src="../scripts/Header.js"></script>
+</body>
+</html>

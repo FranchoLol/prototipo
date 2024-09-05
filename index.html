@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - E.E.S.T. N°2</title>
+    <link rel="icon" href="img/l.png" type="image/png">
+    <link rel="stylesheet" href="styles/web/styleLogin.css">
+</head>
+<body>
+    <header>
+            <img src="img/l.png" alt="Logo del Colegio" class="logo">
+            <h1>E.E.S.T. N°2</h1>
+    </header>
+    <main>
+        <form id="loginForm">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" id="username" class="inputUser" placeholder="DNI, Mail o Nombre de Usuario" list="user-options">
+            <datalist id="user-options">
+                <option value="profe">
+                <option value="profes">
+                <option value="profesor">
+                <option value="ferrando">
+                <option value="matias">
+                <option value="ferrando matias">
+                <option value="matias ferrando">
+            </datalist>
+            <div class="inputPassword">
+                <input type="password" id="password" class="inputPass" placeholder="Contraseña" autocomplete="current-password">
+                <span id="togglePassword" class="eyeInputPass"></span>
+            </div>
+            <button type="submit">Ingresar</button>
+        </form>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

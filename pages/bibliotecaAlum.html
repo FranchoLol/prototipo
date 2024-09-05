@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - E.E.S.T. N°2</title>
+    <link rel="icon" href="../img/l.png" type="image/png">
+    <link rel="stylesheet" href="../styles/style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+</head>
+<body>
+    <header id="menuHeader">
+        <div class="index">
+            <div class="userProfile">
+                <img src="../img/perfiles/CatNegativ.jpg" class="profileImage" alt="Usuario">
+                <h1 class="userName">Capria Franco</h1>
+            </div>
+            <nav class="navHeader">
+                <ul>
+                    <li><a href="menuAlum.html"><img src="../img/utilidades/casa.png" alt="inicioIMG" class="iconsHeader"> Inicio</a></li>
+                    <li><a href="materiaAlum.html"><img src="../img/utilidades/libro.png" alt="MateriasIMG" class="iconsHeader"> Materias</a></li>
+                    <li><a href="asistenciaAlum.html"><img src="../img/utilidades/calendario3.png" alt="asistenciaIMG" class="iconsHeader"> Asistencias</a></li>
+                    <li><a href="bibliotecaAlum.html"><img src="../img/utilidades/biblioteca.png" alt="bibliotecaIMG" class="iconsHeader"> Biblioteca</a></li>
+                </ul>
+            </nav>
+            <div class="confHeader">
+                <button class="btnExit" id="btnExit"><img src="../img/utilidades/cerrarSesion.png" alt="exitIMG" class="iconsHeader"> Salir</button>
+            </div>
+        </div>
+        <label class="btnMenuHeader" for="ckbMenuHeader">
+            <input type="checkbox" id="ckbMenuHeader">
+            <svg viewBox="0 0 32 32"><path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path><path class="line" d="M7 16 27 16"></path></svg>
+        </label>
+    </header>
+    <main>
+        <section class="seccionBiblioteca">
+            <h2>Materias y Materiales</h2>
+            <div class="tablaBibliotecaScroll">
+                <table class="tablaBiblioteca">
+                    <thead>
+                        <tr>
+                            <th>Materias</th>
+                            <th>Materiales</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="materia">Geografía</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                            <td class="materia">Análisis Matemático</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                        </tr>
+                        <tr>
+                            <td class="materia">Sistemas Digitales</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                            <td class="materia">Base de Datos</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                        </tr>
+                        <tr>
+                            <td class="materia">Inglés</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                            <td class="materia">Política y Ciudadanía</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                        </tr>
+                        <tr>    
+                            <td class="materia">Historia</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>  
+                            <td class="materia">Literatura</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                        </tr>
+                        <tr>    
+                            <td class="materia">Modelos y Sistemas</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                            <td class="materia">Educación Física</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                        </tr>
+                        <tr>
+                            <td class="materia">Laboratorio de Redes</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                            <td class="materia">Laboratorio de Diseño Web</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                        </tr>
+                        <tr>
+                            <td class="materia">Laboratorio de Programación</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                            <td class="materia">Laboratorio de Base de Datos</td>
+                            <td class="materiales"><a href="#" class="accesoBilioteca" data-title="Geografía">Libros</a> - <a href="#" class="accesoBilioteca" data-title="Análisis Matemático">Tareas</a> - <a href="#" class="accesoBilioteca" data-title="Sistemas Digitales">Videos</a></td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>
+            
+        </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modalheader">
+                    <h2 id="modal-title">Título</h2>    
+                    <span class="close">&times;</span>
+                </div>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/userBiblioteca.js"></script>
+    <script src="../scripts/Header.js"></script>
+</body>
+</html>
